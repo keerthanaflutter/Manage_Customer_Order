@@ -174,38 +174,3 @@ class CartgetProvider with ChangeNotifier {
   }
 }
 
-
-// class CartProvider with ChangeNotifier {
-//   List<Map<String, dynamic>> _cartItems = [];
-
-//   List<Map<String, dynamic>> get cartItems => _cartItems;
-
-//   void addItemToCart(Product product, int quantity) {
-//     // Check if the product is already in the cart
-//     int index = _cartItems.indexWhere((item) => item['product'] == product);
-//     if (index != -1) {
-//       // Update the quantity if already in cart
-//       _cartItems[index]['quantity'] += quantity;
-//     } else {
-//       // Add new product to cart
-//       _cartItems.add({
-//         'product': product,
-//         'quantity': quantity,
-//       });
-//     }
-//     notifyListeners();
-//   }
-
-//   void removeItemFromCart(Product product) {
-//     _cartItems.removeWhere((item) => item['product'] == product);
-//     notifyListeners();
-//   }
-
-//   void updateItemQuantity(Product product, int quantity) {
-//     int index = _cartItems.indexWhere((item) => item['product'] == product);
-//     if (index != -1) {
-//       _cartItems[index]['quantity'] = quantity;
-//     }
-//     notifyListeners();
-//   }
-// }

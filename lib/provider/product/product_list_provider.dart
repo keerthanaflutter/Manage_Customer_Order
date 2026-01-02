@@ -4,31 +4,6 @@ import 'dart:convert';
 
 import 'package:purchaseproject/model/product/product_model.dart';
 
-// class ProductProvider with ChangeNotifier {
-//   List<Product> _products = [];
-//   bool _isLoading = false;
-
-//   List<Product> get products => _products;
-//   bool get isLoading => _isLoading;
-
-//   Future<void> fetchProducts() async {
-//     _isLoading = true;
-//     notifyListeners();
-//     final response = await http.get(Uri.parse('https://api.escuelajs.co/api/v1/products'));
-
-//     if (response.statusCode == 200) {
-//       final List<dynamic> productList = json.decode(response.body);
-//       _products = productList.map((json) => Product.fromJson(json)).toList();
-//     } else {
-//       throw Exception('Failed to load products');
-//     }
-
-//     _isLoading = false;
-//     notifyListeners();
-//   }
-// }
-
-
 class ProductProvider with ChangeNotifier {
   List<Product> _products = [];
   bool _isLoading = false;

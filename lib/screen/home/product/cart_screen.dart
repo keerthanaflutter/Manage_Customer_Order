@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:purchaseproject/model/cart/cart_get_model.dart';
 import 'package:purchaseproject/provider/cart/add_cart_provider.dart';
-import 'package:purchaseproject/utils/app_color.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class AppColors {
   static const primary = Color(0xFF0A4D8C);

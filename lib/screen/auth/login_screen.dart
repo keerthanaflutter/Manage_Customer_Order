@@ -5,7 +5,6 @@ import 'package:purchaseproject/screen/auth/registration_screen.dart';
 import 'package:purchaseproject/screen/home/dashboard_screen.dart';
 import 'package:purchaseproject/utils/app_color.dart';
 import 'package:purchaseproject/utils/responsive.dart';
-import 'package:purchaseproject/widget/custome_textfeild.dart';
 
 
 class LoginScreen extends StatefulWidget {
