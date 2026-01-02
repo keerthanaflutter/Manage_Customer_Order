@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:purchaseproject/provider/home/orderFilter_provider.dart';
-import 'package:purchaseproject/provider/home/orderListget_provider.dart';
+import 'package:purchaseproject/provider/home/productFilter_provider.dart';
+import 'package:purchaseproject/provider/home/productListget_provider.dart';
 import 'package:purchaseproject/utils/app_color.dart';
 import 'package:purchaseproject/utils/responsive.dart';
 import 'package:shimmer/shimmer.dart';
@@ -33,6 +33,7 @@ class _OrderScreenState extends State<OrderScreen> {
         Provider.of<OrderProvider>(context, listen: false);
     final filterProvider =
         Provider.of<FilterProvider>(context, listen: false);
+
 
     filterProvider.clearFilter();
     await orderProvider.refreshOrders();
